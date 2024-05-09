@@ -55,11 +55,11 @@ int main(int argc, char* argv[]) {
         }
 
         
-        SDL_SetRenderDrawColor(renderer, 0,106,78, 255);
+        SDL_SetRenderDrawColor(renderer, 255, 255,255,0);
         SDL_RenderClear(renderer);
 
         
-        SDL_SetRenderDrawColor(renderer, 244,42,65, 255);
+        SDL_SetRenderDrawColor(renderer, 244,42,65,255);
         drawSolidCircle(renderer, SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 100);
 
         SDL_RenderPresent(renderer);

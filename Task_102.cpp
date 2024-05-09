@@ -19,7 +19,7 @@ bool initializeSDL() {
         return false;
     }
 
-    window = SDL_CreateWindow(" Circle Task 102", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, windowWidth, windowHeight, SDL_WINDOW_SHOWN);
+    window = SDL_CreateWindow(" Circle Task102", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, windowWidth, windowHeight, SDL_WINDOW_SHOWN);
     
     if (!window) {
         printf("error: %s\n", SDL_GetError());
@@ -40,9 +40,9 @@ bool initializeSDL() {
 }
 
 void setup() {
-    SDL_SetRenderDrawColor(renderer,250,225,235, 255);
+    SDL_SetRenderDrawColor(renderer,0,106,78,255);
     SDL_RenderClear(renderer);
-    SDL_Color color = { 0, 0, 0, 255 };
+    SDL_Color color = { 244,42,65,255 };
     SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, color.a);
 }
 
@@ -63,9 +63,9 @@ void update() {
         cirRad = 20;
     }
 
-    SDL_SetRenderDrawColor(renderer, 255, 150, 220, 255);
+    SDL_SetRenderDrawColor(renderer, 0,106,78,255);
     SDL_RenderClear(renderer);
-    SDL_SetRenderDrawColor(renderer,255,255,255,0);
+    SDL_SetRenderDrawColor(renderer,244,42,65,255);
 }
 
 void render() {
@@ -102,6 +102,4 @@ int main(int argc, char* argv[]) {
     cleanup();
     return 0;
 }
-
-
 
